@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="xel-theme" content="node_modules/xel/themes/cupertino.css">
+    <link rel="stylesheet" href="./css/photon.min.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <meta name="xel-iconsets" content="node_modules/xel/iconsets/material.svg">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="window">
+        <header class="toolbar toolbar-header">
+        </header>
+        <div class="window-content">
+            <div class="pane-group">
+
+                <!--panel imágenes-->
+                <div class="pane">
+                    <div class="wrapper" id="wrapper">
+
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <footer class="toolbar toolbar-footer">
+            <x-box>
+                <x-button style="margin-left:15%;">
+                    <x-label>Busqueda</x-label>
+                    <x-icon href="#search"></x-icon>
+                    <dialog>
+                        <x-box vertical style="margin-left: 30px; margin-top: 50px;">
+                            <x-box>
+                                <x-input id="txtAutor">
+                                    <x-icon href="#search"></x-icon>
+                                    <x-label>Buscar por autor</x-label>
+                                </x-input>
+                                <x-button style="margin-left: 10px;" id="btnBuscarAutor">
+                                    <x-icon href="#search"></x-icon>
+                                </x-button>
+                            </x-box>
+                            <x-box style="margin-top:50px;">
+                                <x-input>
+                                    <x-icon href="#search"></x-icon>
+                                    <x-label>Buscar por Titulo</x-label>
+                                </x-input>
+                                <x-button style="margin-left: 10px;" id="btnBuscarTitulo">
+                                    <x-icon href="#search"></x-icon>
+                                </x-button>
+                            </x-box>
+                        </x-box>
+                    </dialog>
+                </x-button>
+                <x-button style="margin-left:10px;">
+                    <x-label>Nuevo libro</x-label>
+                    <x-icon href="#note"></x-icon>
+                </x-button>
+                <x-button style="margin-left:10px;">
+                    <x-label>Todos</x-label>
+                    <x-icon href="#home"></x-icon>
+                </x-button>
+            </x-box>
+        </footer>
+    </div>
+    <script src="node_modules/xel/xel.js" type="module"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
